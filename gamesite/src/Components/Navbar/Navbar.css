@@ -1,0 +1,103 @@
+.navbar {
+  width: 100%; 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  padding: 15px 7%;
+
+  /* sombra e borda como no Figma */
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+}
+
+ul {
+  flex: 1;
+  list-style: none;
+  text-align: center;
+}
+
+ul li {
+  display: inline-block;
+  margin: 0 35px;
+  font-size: 32px;
+  color: #4B626C;
+  cursor: pointer;
+  position: relative;
+}
+
+ul li:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  right: -30px;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 40px;
+  width: 2px;
+  background-color: #ccc;
+}
+
+.tema {
+  width: 55px;
+  height: 55px;
+  cursor: pointer;
+  margin-left: 40px;
+}
+
+.caixa-pesquisa {
+  display: flex;
+  align-items: center;
+  background-color: rgba(151, 170, 162, 0.45); 
+  padding: 0 15px;
+  height: 40px;
+  border-radius: 15px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25); 
+}
+
+.caixa-pesquisa input {
+  background: transparent;
+  border: none;
+  outline: none;  
+  font-size: 14px;
+  width: 150px;
+  color: #000; 
+}
+
+.caixa-pesquisa input::placeholder {
+  color: #000;
+  opacity: 0.6;
+}
+
+.navbar.escuro {
+  background: #1c1c1c; /* cor de fundo escura */
+  box-shadow: 0 4px 4px rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.navbar.escuro ul li {
+  color: #fff;
+}
+
+.navbar.escuro ul li:not(:last-child)::after {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.navbar.escuro .caixa-pesquisa {
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 4px rgba(255, 255, 255, 0.15);
+}
+
+.navbar.escuro .caixa-pesquisa input {
+  color: #fff;
+}
+
+.navbar.escuro .caixa-pesquisa input::placeholder {
+  color: #fff;
+  opacity: 0.6;
+}
