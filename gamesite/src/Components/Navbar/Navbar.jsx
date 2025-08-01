@@ -5,6 +5,8 @@ import lupabranca from '../../assets/lupa-w.png'
 import lupapreta from '../../assets/lupa-b.png'
 import lua from '../../assets/lua.png'
 import sol from '../../assets/sol.png'
+import Conta from './Paginas/Conta'
+import Populares from './Paginas/Populares'
 
 const NavBar = ({ tema, setTema }) => {
   const mudar_tema = () => {
@@ -19,10 +21,10 @@ const NavBar = ({ tema, setTema }) => {
 
       <ul>
         <li>Lançamentos</li>
-        <li>Populares</li>
+        <li><Link to="/populares">Populares</Link></li>
         <li>Gênero</li>
         <li>Promoções</li>
-        <li>Conta</li>
+        <li><Link to="/conta">Minha Conta</Link></li>
       </ul>
 
       <div className='caixa-pesquisa'>
