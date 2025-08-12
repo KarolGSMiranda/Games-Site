@@ -54,7 +54,7 @@ const NavBar = ({ tema, setTema }) => {
         <div className="icone-fechar" onClick={alternarMenu}>
           &times;
         </div>
-        
+
         <div className="menu-mobile-conteudo">
           <ul>
             <li>Lançamentos</li>
